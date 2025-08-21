@@ -66,7 +66,7 @@ Set this to `false` if you don't want to add the default config files shipped wi
 
 For utmost security, you should use your own valid certificate and keyfile, and update the `logstash_ssl_*` variables in your playbook to use your certificate.
 
-To generate a self-signed certificate/key pair, you can use use the command:
+To generate a self-signed certificate/key pair, you can use the command:
 
     $ openssl req -x509 -batch -nodes -days 3650 -newkey rsa:2048 -keyout logstash.key -out logstash.crt -subj '/CN=example.com'
 
